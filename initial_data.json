@@ -1,0 +1,100 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "username": "user1",
+            "password": "pbkdf2_sha256$260000$U7y2Qq8DXPZ6$w2DYVRE+8wnLOKBeP2k95rJ9u5a8oHikO3/uO7q0PVc=",
+            "email": "user1@example.com",
+            "is_staff": false,
+            "is_superuser": false
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "username": "user2",
+            "password": "pbkdf2_sha256$260000$U7y2Qq8DXPZ6$w2DYVRE+8wnLOKBeP2k95rJ9u5a8oHikO3/uO7q0PVc=",
+            "email": "user2@example.com",
+            "is_staff": false,
+            "is_superuser": false
+        }
+    },
+    {
+        "model": "fantasy.player",
+        "pk": 1,
+        "fields": {
+            "name": "Player 1",
+            "position": "GK",
+            "value": "1000000.00"
+        }
+    },
+    {
+        "model": "fantasy.player",
+        "pk": 2,
+        "fields": {
+            "name": "Player 2",
+            "position": "DF",
+            "value": "1000000.00"
+        }
+    },
+    {
+        "model": "fantasy.player",
+        "pk": 3,
+        "fields": {
+            "name": "Player 3",
+            "position": "MF",
+            "value": "1000000.00"
+        }
+    },
+    {
+        "model": "fantasy.player",
+        "pk": 4,
+        "fields": {
+            "name": "Player 4",
+            "position": "FW",
+            "value": "1000000.00"
+        }
+    },
+    {
+        "model": "fantasy.team",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "capital": "5000000.00",
+            "players": [1, 2]
+        }
+    },
+    {
+        "model": "fantasy.team",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "capital": "5000000.00",
+            "players": [3, 4]
+        }
+    },
+    {
+        "model": "fantasy.transfer",
+        "pk": 1,
+        "fields": {
+            "player": 1,
+            "seller": 1,
+            "buyer": null,
+            "price": "1500000.00",
+            "is_active": true
+        }
+    },
+    {
+        "model": "fantasy.transfer",
+        "pk": 2,
+        "fields": {
+            "player": 2,
+            "seller": 2,
+            "buyer": null,
+            "price": "1500000.00",
+            "is_active": true
+        }
+    }
+]
