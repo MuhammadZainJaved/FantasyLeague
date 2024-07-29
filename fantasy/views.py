@@ -101,12 +101,6 @@ def register(request):
 
 @api_view(["GET"])
 @permission_classes([permissions.IsAuthenticated])
-def protected_view(request):
-    return Response({"message": "This is a protected view"}, status=status.HTTP_200_OK)
-
-
-@api_view(["GET"])
-@permission_classes([permissions.IsAuthenticated])
 def list_player_for_sale(request):
     players_for_sale = Player.objects.filter(transfer__is_active=True)
     serializer = PlayerSerializer(players_for_sale, many=True)

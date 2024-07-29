@@ -10,7 +10,6 @@ from .views import (
     TeamViewSet,
     TransferViewSet,
     register,
-    protected_view,
     list_player_for_sale,
 )
 
@@ -25,6 +24,5 @@ urlpatterns = [
     path("token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
     path("token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
     path("register/", register, name="register"),
-    path("protected/", protected_view, name="protected_view"),
     path("players-for-sale/", list_player_for_sale, name="list_player_for_sale"),
 ]
