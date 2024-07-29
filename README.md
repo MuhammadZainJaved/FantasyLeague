@@ -74,11 +74,6 @@ The application will be accessible at `http://localhost:8000/`. The Django devel
     }
     ```
 
-- **Protected View**
-  - **Endpoint:** `/api/protected/`
-  - **Method:** GET
-  - **Authentication:** Bearer token required
-
 #### User Management
 
 - **List Users**
@@ -167,6 +162,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - PostgreSQL
 - Docker
 
-```
-
-Feel free to adjust any parts of the documentation to better fit your needs or to add any additional sections if required!
